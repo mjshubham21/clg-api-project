@@ -52,7 +52,7 @@ function App() {
     }).then((res) => res.json());
     setTodos([...todos, data]);
     setPopupActive(false);
-    setNewTodo("");
+    setNewTodos("");
   };
 
   return (

@@ -7,13 +7,16 @@ app = express();
 app.use(express.json());
 app.use(cors());
 mongoose
-  .connect(process.env.MONGO_URL, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  })
+  .connect(
+    "mongodb+srv://mjshubham21:Mj21Wakandan@api-project.luexi89.mongodb.net/ToDoListDB",
+    {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+    }
+  )
   .then(() => console.log("Connected to DB."))
   .catch(console.error);
-
+// ?retryWrites=true&w=majority
 const Todo = require("./models/Todo");
 
 app.get("/todos", async (req, res) => {
