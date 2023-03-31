@@ -50,6 +50,7 @@ function App() {
         text: newTodo,
       }),
     }).then((res) => res.json());
+
     setTodos([...todos, data]);
     setPopupActive(false);
     setNewTodos("");
@@ -71,7 +72,7 @@ function App() {
 
               <div className="text">{todo.text}</div>
 
-              <div className="delete-todo" onClick={() => deleteTodo}>
+              <div className="delete-todo" onClick={() => deleteTodo(todo._id)}>
                 x
               </div>
             </div>
