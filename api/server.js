@@ -7,7 +7,7 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 mongoose
-  .connect(process.env.MONGO_URL, {
+  .connect("mongodb://127.0.0.1:27017/mern-todo", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
@@ -23,9 +23,9 @@ app.get("/todos", async (req, res) => {
 
 app.post("/todo/new", (req, res) => {
   const todo = new Todo({
-    tect: req.body.text,
+    text: req.body.text,
   });
-  res.save();
+  todo.save();
   res.json(todo);
 });
 
