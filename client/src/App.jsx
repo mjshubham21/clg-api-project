@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-const API_BASE = "http://localhost:5173";
+const API_BASE = "http://localhost:3001";
 
 function App() {
   const [todos, setTodos] = useState([]);
@@ -63,7 +63,7 @@ function App() {
         <div className="todos">
           {todos.map((todo) => (
             <div
-              className={"todo" + (todo.complete ? "is-complete" : "")}
+              className={"todo " + (todo.complete ? "is-complete" : "")}
               key={todo._id}
               onClick={() => completeTodo(todo._id)}
             >
