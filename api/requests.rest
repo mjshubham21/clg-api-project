@@ -6,5 +6,13 @@ POST http://localhost:3001/todo/new
 Content-Type: application/json
 
  {
-    "text":"TeSting"
+    "text":"TeSting 2"
  }
+
+###
+
+DELETE http://localhost:3001/todo/delete/6426c3a2c6a9a8952d9be9bf
+
+###
+
+PUT http://localhost:3001/todo/complete/6426c461c6a9a8952d9be9c4
