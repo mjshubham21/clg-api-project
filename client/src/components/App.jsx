@@ -18,7 +18,7 @@ function App() {
   };
 
   const completeTodo = async (id) => {
-    const data = await fetch(API_BASE + "/todo/complete" + id).then((res) =>
+    const data = await fetch(API_BASE + "/todo/complete/" + id).then((res) =>
       res.json()
     );
 
@@ -55,7 +55,6 @@ function App() {
     setPopupActive(false);
     setNewTodos("");
   };
-
   return (
     <>
       <div className="app">
@@ -78,7 +77,7 @@ function App() {
             </div>
           ))}
         </div>
-        <div className="addPopup" onClick={setPopupActive(true)}>
+        <div className="addPopup" onClick={() => setPopupActive(true)}>
           +
         </div>
         {popupActive ? (
@@ -91,10 +90,10 @@ function App() {
               <input
                 type="text"
                 className="add-todo-input"
-                onChange={(e) => setNewTodo(e.target.value)}
+                onChange={(e) => setNewTodos(e.target.value)}
                 value={newTodo}
               />
-              <div className="button" onClick={addTodo}>
+              <div className="button" onClick={() => addTodo}>
                 Create Task...
               </div>
             </div>
