@@ -76,3 +76,95 @@ h4 {
   text-decoration: line-through;
 }
 
+.todo .delete-todo {
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  transform: translateY(-50%);
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: red;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.addPopup {
+  position: fixed;
+  bottom: 3rem;
+  right: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  color: var(--light);
+  border-radius: 9rem;
+  background-image: linear-gradient(
+    to bottom,
+    var(--primary),
+    var(--secondary)
+  );
+  cursor: pointer;
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 25rem;
+  background-color: var(--light);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0px 3px 24px var(--dark);
+}
+
+.closePopup {
+  position: absolute;
+  top: 0.3rem;
+  right: 0.3rem;
+  width: 1rem;
+  height: 1rem;
+  font-size: 0.8rem;
+  color: var(--light);
+  background-color: var(--primary);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.popup h3 {
+  color: var(--dark);
+  margin-bottom: 1rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.add-todo-input {
+  appearance: none;
+  border: none;
+  outline: none;
+  border-color: aliceblue;
+  border-radius: 16px;
+  box-shadow: 0px 2px 24px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1.3rem;
+}
+
+.button {
+  padding: 0.7rem;
+  border-radius: 99px;
+  background-image: linear-gradient(to right, var(--primary), var(--secondary));
+  display: inline-block;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 1rem;
+  margin-top: 1rem;
+  text-align: center;
+  cursor: pointer;
+}
