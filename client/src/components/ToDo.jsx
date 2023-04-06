@@ -25,7 +25,7 @@ function ToDo() {
 
     setTodos((todos) =>
       todos.map((todo) => {
-        if (todo.id === data._id) {
+        if (todo._id === data._id) {
           todo.complete = data.complete;
         }
         return todo;
