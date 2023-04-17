@@ -51,7 +51,8 @@ h4 {
   opacity: 0.8;
 }
 
-.todo .checkbox {
+/* .todo  */
+.checkbox {
   width: 1rem;
   height: 1rem;
   margin-right: 2rem;
@@ -59,7 +60,8 @@ h4 {
   background-color: var(--dark-alt);
 }
 
-.todo .is-complete .checkbox {
+/* .todo  */
+.is-complete .checkbox {
   background-color: var(--primary);
   background-image: linear-gradient(
     to bottom,

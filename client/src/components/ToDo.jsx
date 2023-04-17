@@ -23,6 +23,7 @@ function ToDo() {
       res.json()
     );
 
+    // alert("Clicked on the todo");
     setTodos((todos) =>
       todos.map((todo) => {
         if (todo._id === data._id) {
