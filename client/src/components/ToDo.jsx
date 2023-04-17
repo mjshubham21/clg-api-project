@@ -4,7 +4,7 @@ const API_BASE = "http://localhost:3001";
 
 function ToDo() {
   const [todos, setTodos] = useState([]);
-  const [newTodo, setNewTodos] = useState("");
+  const [newTodo, setNewTodo] = useState("");
   const [popupActive, setPopupActive] = useState(false);
 
   useEffect(() => {
@@ -45,7 +45,7 @@ function ToDo() {
     const data = await fetch(API_BASE + "/todo/new", {
       method: "POST",
       headers: {
-        "content-Type": "application/json",
+        "Content-Type": "application/json",
       },
       body: JSON.stringify({
         text: newTodo,
@@ -54,8 +54,9 @@ function ToDo() {
 
     setTodos([...todos, data]);
     setPopupActive(false);
-    setNewTodos("");
+    setNewTodo("");
   };
+
   return (
     <>
       <div className="app">
@@ -91,10 +92,10 @@ function ToDo() {
               <input
                 type="text"
                 className="add-todo-input"
-                onChange={(e) => setNewTodos(e.target.value)}
+                onChange={(e) => setNewTodo(e.target.value)}
                 value={newTodo}
               />
-              <div className="button" onClick={() => addTodo}>
+              <div className="button" onClick={addTodo}>
                 Create Task...
               </div>
             </div>
