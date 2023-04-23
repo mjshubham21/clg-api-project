@@ -2,7 +2,8 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 
 function Weather() {
-  const apiKey = process.env.API_KEY;
+  // const apiKey = process.env.API_KEY;
+  const apiKey = import.meta.env.VITE_API_KEY;
   const [inputCity, setInputCity] = useState("");
   const [data, setData] = useState({});
   const getData = (city) => {
