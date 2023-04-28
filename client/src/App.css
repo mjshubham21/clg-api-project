@@ -12,6 +12,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Fira Sans", sans-serif;
+  transition: 150ms;
 }
 
 body {
@@ -29,6 +30,9 @@ h1 {
   margin-bottom: 2rem;
 }
 
+h1:hover {
+  color: #0077ff;
+}
 h4 {
   font-size: 1.5rem;
   color: var(--light-alt);
@@ -49,6 +53,7 @@ h4 {
 }
 .todo:hover {
   opacity: 0.8;
+  transform: scale(1.02);
 }
 
 /* .todo  */
@@ -107,6 +112,10 @@ h4 {
     var(--secondary)
   );
   cursor: pointer;
+}
+
+.addPopup:hover {
+  transform: scale(1.1);
 }
 
 .popup {
@@ -173,9 +182,12 @@ h4 {
 /* Weather Component */
 .weather-heading {
   font-size: 2rem;
-  margin-bottom: 1rem;
+  margin: 2rem;
 }
 
+.weather-heading:hover {
+  color: #0077ff;
+}
 .container {
   display: flex;
   align-items: center;
@@ -198,11 +210,14 @@ h4 {
   border-radius: 5px;
   cursor: pointer;
 }
-
+.search:hover {
+  background-color: rgb(16, 237, 16);
+}
 .res {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 3rem;
 }
 
 .resCity {

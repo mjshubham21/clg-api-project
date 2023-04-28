@@ -61,7 +61,7 @@ function ToDo() {
   return (
     <>
       <div className="app">
-        <h1>Welcome, mj...</h1>
+        <h1 className="todoHead">Welcome, mj...</h1>
         <h4>Your Tasks...</h4>
         <div className="todos">
           {todos.map((todo) => (
