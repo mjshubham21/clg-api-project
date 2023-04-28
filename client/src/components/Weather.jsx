@@ -37,7 +37,7 @@ function Weather() {
   }, []);
   return (
     <>
-      <h1> Weather Api.</h1>
+      <h1 className="weather-heading"> Weather Api.</h1>
       <div className="container">
         <input
           value={inputCity}

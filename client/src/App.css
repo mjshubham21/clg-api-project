@@ -93,10 +93,7 @@ h4 {
 }
 
 .addPopup {
-  position: fixed;
-  /* bottom: 3rem; */
-  /* right: auto; */
-  margin: 2.5rem 45rem;
+  margin: 2.5rem auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -174,5 +171,45 @@ h4 {
 }
 
 /* Weather Component */
+.weather-heading {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
 .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.city {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  margin-right: 0.5rem;
+}
+
+.search {
+  padding: 0.5rem 1rem;
+  background-color: #0077ff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.res {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.resCity {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.temp {
+  font-size: 1.5rem;
 }
