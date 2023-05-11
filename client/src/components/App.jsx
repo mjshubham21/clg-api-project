@@ -4,6 +4,8 @@ import Weather from "./Weather";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import About from "./About";
+import Navbar from "./Navbar";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   useEffect(() => {
@@ -12,11 +14,14 @@ function App() {
     });
   }, []);
   return (
-    <>
-      <ToDo />
-      <Weather />
-      <About />
-    </>
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<ToDo />} />
+        <Route path="/weather" element={<Weather />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
+    </Router>
   );
 }
 
