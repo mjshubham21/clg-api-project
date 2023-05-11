@@ -2,6 +2,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
 require("dotenv").config();
+const encrypt = require("mongoose-encrypt");
 
 const app = express();
 app.use(express.json());
@@ -16,7 +17,7 @@ mongoose
 // ?retryWrites=true&w=majority
 const Todo = require("./models/Todo");
 
-const apiKey = process.env.API_KEY;
+// const apiKey = process.env.API_KEY;
 
 app.get("/todos", async (req, res) => {
   const todos = await Todo.find();

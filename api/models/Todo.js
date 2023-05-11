@@ -14,7 +14,11 @@ const TodoSchema = new Schema({
     type: String,
     default: Date.now(),
   },
+  username: String,
+  password: String,
 });
+
+todoSchema.plugin(encrypt, { encryptionKey: secretKey, fields: ["password"] });
 
 const Todo = mongoose.model("Todo", TodoSchema);
 
