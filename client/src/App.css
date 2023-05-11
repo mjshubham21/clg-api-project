@@ -281,3 +281,37 @@ h4 {
   color: var(--light-alt);
   text-decoration: underline;
 }
+
+/* Welcome section  */
+.welcome {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.welcome__heading {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: var(--light);
+}
+
+.welcome__buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.welcome__button {
+  padding: 0.7rem 1.5rem;
+  margin-right: 1rem;
+  background-color: var(--primary);
+  color: var(--light);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 150ms;
+}
+
+.welcome__button:hover {
+  background-color: var(--secondary);
+}
