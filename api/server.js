@@ -52,4 +52,27 @@ app.put("/todo/update/:id", async (req, res) => {
   res.json(todo);
 });
 
+// Route for user signup
+app.post("/signup", (req, res) => {
+  const { username, password } = req.body;
+  const todo = new Todo({
+    // Set the username and password fields
+    username: username,
+    password: password,
+  });
+  todo.save();
+  res.json({ message: "User signed up successfully" });
+});
+
+// Route for user login
+app.post("/login", async (req, res) => {
+  const { username, password } = req.body;
+  const user = await Todo.findOne({ username: username });
+  if (user && user.password === password) {
+    res.json({ message: "Login successful" });
+  } else {
+    res.status(401).json({ error: "Invalid username or password" });
+  }
+});
+
 app.listen(3001, () => console.log("Server started on port 3001."));
