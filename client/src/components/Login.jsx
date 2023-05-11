@@ -11,7 +11,7 @@ const Login = ({ setLoggedIn }) => {
   };
 
   return (
-    <div>
+    <div className="login-container">
       <h2>Login</h2>
       <form>
         <input
@@ -19,6 +19,7 @@ const Login = ({ setLoggedIn }) => {
           placeholder="Username"
           value={username}
           onChange={(e) => setUsername(e.target.value)}
+          className="login-input"
         />
         <input
           type="password"
