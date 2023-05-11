@@ -3,6 +3,7 @@ import ToDo from "./ToDo";
 import Weather from "./Weather";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import About from "./About";
 
 function App() {
   useEffect(() => {
@@ -14,6 +15,7 @@ function App() {
     <>
       <ToDo />
       <Weather />
+      <About />
     </>
   );
 }
