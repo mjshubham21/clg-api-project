@@ -1,5 +1,6 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
+const encrypt = require("mongoose-encrypt");
 
 const TodoSchema = new Schema({
   text: {
@@ -14,11 +15,13 @@ const TodoSchema = new Schema({
     type: String,
     default: Date.now(),
   },
-  username: String,
-  password: String,
+  // username: String,
+  // password: String,
 });
 
-TodoSchema.plugin(encrypt, { encryptionKey: secretKey, fields: ["password"] });
+// const secretKey = process.env.ENCRYPTION_KEY;
+
+// TodoSchema.plugin(encrypt, { encryptionKey: secretKey, fields: ["password"] });
 
 const Todo = mongoose.model("Todo", TodoSchema);
 
