@@ -283,7 +283,7 @@ h4 {
 }
 
 /* Welcome section  */
-.welcome {
+/* .welcome {
   max-width: 400px;
   margin: 0 auto;
   padding: 2rem;
@@ -314,4 +314,97 @@ h4 {
 
 .welcome__button:hover {
   background-color: var(--secondary);
+} */
+.welcome-container {
+  max-width: 37.5rem;
+  margin: 0 auto 2rem;
+  padding: 1.25rem;
+  border-radius: 0.3125rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
+}
+
+.welcome-container h1 {
+  font-size: 1.5rem;
+  margin-bottom: 0.625rem;
+}
+
+.welcome-container p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.button {
+  padding: 0.7rem 1.5rem;
+  border-radius: 99px;
+  background-image: linear-gradient(to right, var(--primary), var(--secondary));
+  display: inline-block;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 1rem;
+  margin: 0 1rem;
+  text-align: center;
+  cursor: pointer;
+  color: var(--light);
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #0077ff;
+}
+
+.button.signup {
+  background-image: linear-gradient(to right, var(--secondary), var(--primary));
+}
+
+/* Login section */
+.login-container {
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: var(--dark);
+  border-radius: 0.7rem;
+  box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.login-container h2 {
+  font-size: 1.5rem;
+  color: var(--light);
+  margin-bottom: 1rem;
+}
+
+.login-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-container input {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  background-color: var(--dark-alt);
+  color: var(--light);
+  border: none;
+  border-radius: 0.5rem;
+}
+
+.login-container button {
+  padding: 0.7rem;
+  border-radius: 0.7rem;
+  background-image: linear-gradient(to right, var(--primary), var(--secondary));
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: var(--light);
+  border: none;
+  cursor: pointer;
+}
+
+.login-container button:hover {
+  transform: scale(1.05);
 }

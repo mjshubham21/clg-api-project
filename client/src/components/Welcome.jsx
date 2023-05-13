@@ -5,11 +5,15 @@ import Signup from "./Signup";
 
 const Welcome = ({ setLoggedIn }) => {
   return (
-    <div>
+    <div className="welcome-container">
       <h1>Welcome to clg-api-project</h1>
-      <div>
-        <Link to="/login">Login</Link>
-        <Link to="/signup">Signup</Link>
+      <div className="button-container">
+        <Link to="/login" className="button">
+          Login
+        </Link>
+        <Link to="/signup" className="button signup">
+          Signup
+        </Link>
       </div>
       {/* Render the Login and Signup components based on the route */}
       <Routes>
