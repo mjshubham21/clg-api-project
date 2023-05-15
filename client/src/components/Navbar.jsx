@@ -17,6 +17,9 @@ function Navbar() {
             <Link to="/mern">MERN</Link>
           </li>
           <li>
+            <Link to="/vite">Vite</Link>
+          </li>
+          <li>
             <Link to="/about">About</Link>
           </li>
         </ul>
