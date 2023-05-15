@@ -60,6 +60,7 @@ import Mern from "./Mern";
 // import { gapi } from "gapi-script";
 import Vite from "./Vite";
 import DadJoke from "./DadJoke";
+import Calculator from "./Calculator";
 // const clientId =
 //   "815051058611-opnbo140tojg1rpru10oklii8ohmnaa0.apps.googleusercontent.com";
 
@@ -89,6 +90,7 @@ function App() {
       <Routes>
         <Route path="/" element={<ToDo />} />
         <Route path="/weather" element={<Weather />} />
+        <Route path="/calculator" element={<Calculator />} />
         <Route path="/mern" element={<Mern />} />
         <Route path="/vite" element={<Vite />} />
         <Route path="/dad" element={<DadJoke />} />

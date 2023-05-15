@@ -14,6 +14,9 @@ function Navbar() {
             <Link to="/weather">Weather</Link>
           </li>
           <li>
+            <Link to="/calculator">Calculator</Link>
+          </li>
+          <li>
             <Link to="/mern">MERN</Link>
           </li>
           <li>
