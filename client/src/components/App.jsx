@@ -57,24 +57,25 @@ import About from "./About";
 import Navbar from "./Navbar";
 import Welcome from "./Welcome";
 import Mern from "./Mern";
-import { gapi } from "gapi-script";
+// import { gapi } from "gapi-script";
 import Vite from "./Vite";
-const clientId =
-  "815051058611-opnbo140tojg1rpru10oklii8ohmnaa0.apps.googleusercontent.com";
+import DadJoke from "./DadJoke";
+// const clientId =
+//   "815051058611-opnbo140tojg1rpru10oklii8ohmnaa0.apps.googleusercontent.com";
 
 function App() {
-  const [isLoggedIn, setLoggedIn] = useState(false);
+  // const [isLoggedIn, setLoggedIn] = useState(false);
 
-  useEffect(() => {
-    function start() {
-      gapi.client.init({
-        clientId: clientId,
-        scope: "",
-      });
-    }
+  // useEffect(() => {
+  //   function start() {
+  //     gapi.client.init({
+  //       clientId: clientId,
+  //       scope: "",
+  //     });
+  //   }
 
-    gapi.load("client:auth2", start);
-  });
+  //   gapi.load("client:auth2", start);
+  // });
 
   useEffect(() => {
     AOS.init({
@@ -90,6 +91,7 @@ function App() {
         <Route path="/weather" element={<Weather />} />
         <Route path="/mern" element={<Mern />} />
         <Route path="/vite" element={<Vite />} />
+        <Route path="/dad" element={<DadJoke />} />
         <Route path="/about" element={<About />} />
       </Routes>
     </Router>

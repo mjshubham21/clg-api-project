@@ -20,6 +20,9 @@ function Navbar() {
             <Link to="/vite">Vite</Link>
           </li>
           <li>
+            <Link to="/dad">Dad-Joke</Link>
+          </li>
+          <li>
             <Link to="/about">About</Link>
           </li>
         </ul>
