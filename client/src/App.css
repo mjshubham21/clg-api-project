@@ -408,3 +408,97 @@ h4 {
 .login-container button:hover {
   transform: scale(1.05);
 }
+
+/* Weather.jsx  */
+/* Weather Component */
+
+.weather-heading {
+  font-size: 2rem;
+  margin: 2rem;
+}
+
+.weather-heading:hover {
+  color: #0077ff;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.city {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  margin-right: 0.5rem;
+}
+
+.search {
+  padding: 0.5rem 1rem;
+  background-color: #0077ff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search:hover {
+  background-color: rgb(16, 237, 16);
+}
+
+.res {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem;
+}
+.res p {
+  margin: 0.3rem;
+  opacity: 0.8;
+}
+
+.res p:hover {
+  transform: scale(1.02);
+  opacity: 1;
+}
+
+.heading {
+  color: #0077ff;
+  margin: 1rem 5rem;
+}
+.resCity {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.temp {
+  font-size: 1.5rem;
+}
+
+.forecast-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.forecast-card {
+  background-color: var(--dark);
+  color: var(--light);
+  padding: 1rem;
+  border-radius: 0.7rem;
+  margin: 1rem;
+  width: 200px;
+}
+
+.forecast-card p {
+  margin-bottom: 0.5rem;
+}
+
+.forecast-card:hover {
+  transform: scale(1.05);
+  background-color: #6f9cf0;
+}
