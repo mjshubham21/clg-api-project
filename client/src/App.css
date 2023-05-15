@@ -509,3 +509,49 @@ h4 {
   transform: scale(1.05);
   background-color: #6f9cf0;
 }
+/* MERN Section */
+.mern-info {
+  /* background-color: #f8f8f8; */
+  padding: 2rem;
+  padding-top: 4rem;
+}
+
+.mern-heading {
+  font-size: 2rem;
+  color: var(--secondary);
+}
+
+.mern-description {
+  margin-top: 1rem;
+  /* color: var(--dark-alt); */
+}
+
+.technology {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.technology-info {
+  flex: 1 0 300px;
+  margin: 1rem;
+  padding: 1.5rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+}
+
+.technology-info h3 {
+  font-size: 1.5rem;
+  color: var(--dark);
+  margin-top: 1rem;
+}
+
+.technology-info p {
+  color: var(--dark-alt);
+}

@@ -56,6 +56,7 @@ import "aos/dist/aos.css";
 import About from "./About";
 import Navbar from "./Navbar";
 import Welcome from "./Welcome";
+import Mern from "./Mern";
 import { gapi } from "gapi-script";
 const clientId =
   "815051058611-opnbo140tojg1rpru10oklii8ohmnaa0.apps.googleusercontent.com";
@@ -86,13 +87,8 @@ function App() {
       <Routes>
         <Route path="/" element={<ToDo />} />
         <Route path="/weather" element={<Weather />} />
+        <Route path="/mern" element={<Mern />} />
         <Route path="/about" element={<About />} />
-        {/* {!isLoggedIn && (
-          <Route path="/" element={<Welcome setLoggedIn={setLoggedIn} />} />
-        )}
-        {isLoggedIn && <Route path="/todo" element={<ToDo />} />}
-        {isLoggedIn && <Route path="/weather" element={<Weather />} />}
-        <Route path="/about" element={<About />} /> */}
       </Routes>
     </Router>
   );
