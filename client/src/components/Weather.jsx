@@ -99,7 +99,7 @@ function Weather() {
   }, []);
 
   return (
-    <>
+    <div className="app">
       <h2 className="weather-heading">Weather Api.</h2>
       <div className="container">
         <input
@@ -135,7 +135,7 @@ function Weather() {
           </div>
         </>
       )}
-    </>
+    </div>
   );
 }
 
